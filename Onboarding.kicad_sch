@@ -8672,27 +8672,7 @@
 		)
 		(uuid "25d7c190-af30-4b68-9322-7c3fd2c43701")
 	)
-	(text_box "I did the resistor math by drawing 10mA from the GPIO. Idk if thats right, current kinda confuses me"
-		(exclude_from_sim no)
-		(at 17.78 246.38 0)
-		(size 43.18 8.0376)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "a546c1c1-9938-4af2-83b2-01f8893bc334")
-	)
-	(text_box "Each pin has a voltage divider to 3V31. Additionaly each has a low-pass filter with a cutoff of 10kHz. This way reduction at 1kHz is only around 0.5%, while reduction at Nyquist frequency (2.105MHz) is 99.53%"
+	(text_box "Each pin has a voltage divider to 3V31. Additionaly each has a low-pass filter with a cutoff of 1kHz. So if the resistor is 5.1k that means the capacitor should be 31nf"
 		(exclude_from_sim no)
 		(at 165.1 152.4 0)
 		(size 101.6 8.3717)
@@ -11538,7 +11518,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22nf"
+		(property "Value" "22n"
 			(at 85.09 30.734 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12764,7 +12744,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6pF"
+		(property "Value" "6p"
 			(at 34.29 144.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13012,7 +12992,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6pF"
+		(property "Value" "6p"
 			(at 59.69 144.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13202,7 +13182,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22nf"
+		(property "Value" "22n"
 			(at 101.6 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13833,7 +13813,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5k1"
 			(at 59.69 73.914 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15285,7 +15265,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1u"
 			(at 229.87 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15822,7 +15802,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3nf"
+		(property "Value" "31n"
 			(at 255.27 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16153,7 +16133,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1u"
 			(at 191.77 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16313,7 +16293,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5k1"
 			(at 245.11 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16395,7 +16375,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3nf"
+		(property "Value" "31n"
 			(at 255.27 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16555,7 +16535,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7uh"
+		(property "Value" "4.7u"
 			(at 74.93 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17242,7 +17222,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uf"
+		(property "Value" "10u"
 			(at 33.02 38.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18280,7 +18260,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5k1"
 			(at 72.39 71.374 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19537,7 +19517,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3nf"
+		(property "Value" "31n"
 			(at 254 146.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19858,7 +19838,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nf"
+		(property "Value" "100n"
 			(at 67.31 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
