@@ -5,7 +5,7 @@
 	(uuid "1ef522de-f614-4c6a-926c-c7899b0bf4fc")
 	(paper "B" portrait)
 	(lib_symbols
-		(symbol "Connector:Conn_01x03_Pin"
+		(symbol "Connector:Conn_01x05_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -16,7 +16,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 5.08 0)
+				(at 0 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -25,8 +25,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x03_Pin"
-				(at 0 -5.08 0)
+			(property "Value" "Conn_01x05_Pin"
+				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -57,7 +57,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x03, script generated"
+			(property "Description" "Generic connector, single row, 01x05, script generated"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -100,7 +100,18 @@
 					)
 				)
 			)
-			(symbol "Conn_01x03_Pin_1_1"
+			(symbol "Conn_01x05_Pin_1_1"
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(rectangle
 					(start 0.8636 2.667)
 					(end 0 2.413)
@@ -132,6 +143,29 @@
 					)
 					(fill
 						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0.8636 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(polyline
@@ -170,8 +204,20 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at 5.08 5.08 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -189,7 +235,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -207,7 +253,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -217,6 +263,42 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1181,6 +1263,105 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -8770,7 +8951,7 @@
 		(at 214.63 283.21)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "406bdd50-07ee-41aa-9d72-13d109451a74")
+		(uuid "4044cb1c-e58a-4d96-8579-a4678a6e705d")
 	)
 	(junction
 		(at 227.33 96.52)
@@ -8845,6 +9026,12 @@
 		(uuid "786aa466-7d72-41e2-a38c-f02f878a1fcc")
 	)
 	(junction
+		(at 175.26 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89ce3826-dde8-4c34-a5db-16a910c4e6f4")
+	)
+	(junction
 		(at 162.56 279.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8873,6 +9060,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "98004282-0ab1-4c7d-9859-1cc9263b7a81")
+	)
+	(junction
+		(at 175.26 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a13b4cdb-6f16-40da-ad82-7f4eda703d4e")
 	)
 	(junction
 		(at 226.06 132.08)
@@ -9124,7 +9317,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 283.21) (xy 214.63 302.26)
+			(xy 214.63 276.86) (xy 214.63 283.21)
 		)
 		(stroke
 			(width 0)
@@ -9324,7 +9517,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 91.44) (xy 177.8 62.23)
+			(xy 199.39 91.44) (xy 199.39 62.23)
 		)
 		(stroke
 			(width 0)
@@ -9364,6 +9557,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 93.98) (xy 212.09 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "216dc710-4a18-400b-a46f-420fe76510f9")
+	)
+	(wire
+		(pts
 			(xy 20.32 237.49) (xy 26.67 237.49)
 		)
 		(stroke
@@ -9391,26 +9594,6 @@
 			(type default)
 		)
 		(uuid "2629b0e3-b01d-41d1-a4c9-8e04ffa79f98")
-	)
-	(wire
-		(pts
-			(xy 214.63 276.86) (xy 214.63 283.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2799b129-488a-47dc-8463-8cfb743ceb98")
-	)
-	(wire
-		(pts
-			(xy 177.8 96.52) (xy 177.8 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27b4892a-f12e-4f86-baef-c83ee833930d")
 	)
 	(wire
 		(pts
@@ -9574,6 +9757,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 283.21) (xy 214.63 302.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3569e214-99e5-43e3-887e-e23fbda26e49")
+	)
+	(wire
+		(pts
 			(xy 123.19 15.24) (xy 123.19 24.13)
 		)
 		(stroke
@@ -9584,7 +9777,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 62.23) (xy 212.09 62.23)
+			(xy 199.39 62.23) (xy 212.09 62.23)
 		)
 		(stroke
 			(width 0)
@@ -9694,7 +9887,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 133.35) (xy 100.33 137.16)
+			(xy 100.33 124.46) (xy 100.33 137.16)
 		)
 		(stroke
 			(width 0)
@@ -9911,6 +10104,16 @@
 			(type default)
 		)
 		(uuid "6da8e4c4-ddc2-4371-bbf4-c192d753d2fe")
+	)
+	(wire
+		(pts
+			(xy 175.26 86.36) (xy 175.26 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6eb06f6a-1d25-47ca-a926-96b5f7212eb3")
 	)
 	(wire
 		(pts
@@ -10174,6 +10377,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 88.9) (xy 182.88 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c1a16fc-34ed-4974-9c43-379451fcf517")
+	)
+	(wire
+		(pts
 			(xy 87.63 203.2) (xy 90.17 203.2)
 		)
 		(stroke
@@ -10321,16 +10534,6 @@
 			(type default)
 		)
 		(uuid "a5ad2f2d-d190-4ace-ab24-c370ac9aaa9a")
-	)
-	(wire
-		(pts
-			(xy 177.8 93.98) (xy 212.09 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a67839b4-439e-47b7-948b-cdec2f68a295")
 	)
 	(wire
 		(pts
@@ -10494,6 +10697,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 81.28) (xy 175.26 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbf3f2a5-ba03-4118-9407-f496b124bf1c")
+	)
+	(wire
+		(pts
 			(xy 223.52 236.22) (xy 226.06 236.22)
 		)
 		(stroke
@@ -10611,6 +10824,16 @@
 			(type default)
 		)
 		(uuid "d39e49ac-3455-426a-9d99-eb9743971eee")
+	)
+	(wire
+		(pts
+			(xy 171.45 88.9) (xy 175.26 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d49d7830-e4a8-486d-94e3-276f9a7da2e9")
 	)
 	(wire
 		(pts
@@ -10784,6 +11007,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 86.36) (xy 175.26 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e83c2cce-cd02-4981-8bd2-1f461cea22ca")
+	)
+	(wire
+		(pts
 			(xy 43.18 83.82) (xy 46.99 83.82)
 		)
 		(stroke
@@ -10904,6 +11137,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 81.28) (xy 182.88 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f73e27f8-d8c6-4ab5-ba62-7f714b3bffda")
+	)
+	(wire
+		(pts
 			(xy 135.89 111.76) (xy 135.89 114.3)
 		)
 		(stroke
@@ -10963,6 +11206,16 @@
 			(justify right bottom)
 		)
 		(uuid "0e31656b-11a7-48c9-b0ea-3ce7f0e72325")
+	)
+	(label "Pinnn"
+		(at 199.39 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e4c561a-ead3-479f-84f7-e89a7cee0beb")
 	)
 	(label "SWCLK"
 		(at 123.19 180.34 0)
@@ -11143,6 +11396,16 @@
 		)
 		(uuid "703671ab-5111-45c3-a711-2a7b3da86a54")
 	)
+	(label "Pinnn"
+		(at 171.45 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "80927bab-c525-45ae-affc-aff3da36ff78")
+	)
 	(label "RGB_B"
 		(at 49.53 242.57 0)
 		(effects
@@ -11296,6 +11559,16 @@
 		)
 		(uuid "b7091057-6720-4fa1-bfae-8b90504fc3c1")
 	)
+	(label "Pi"
+		(at 177.8 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b92e8b79-786a-4dc6-9446-39c3707c79ba")
+	)
 	(label "OSC_IN"
 		(at 48.26 123.19 180)
 		(effects
@@ -11426,6 +11699,16 @@
 			(justify left bottom)
 		)
 		(uuid "ed904997-2a69-4c38-8c03-e3205218abf4")
+	)
+	(label "Pi"
+		(at 171.45 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f97855ab-7805-43e9-b2b6-dc56947495e1")
 	)
 	(label "SDA"
 		(at 123.19 170.18 0)
@@ -11592,89 +11875,6 @@
 			(project "Onboarding"
 				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 172.72 93.98 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "034cb85f-c490-4777-ab91-e3811a7c4d59")
-		(property "Reference" "J4"
-			(at 173.355 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x03_Pin"
-			(at 173.355 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
-			(at 172.72 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 172.72 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "5b5d4efd-fd36-496f-b710-8d90b2599a6d")
-		)
-		(pin "2"
-			(uuid "0723fa08-687b-4469-b3c6-c8b09004a7a8")
-		)
-		(pin "1"
-			(uuid "29892a83-dc1c-4718-aea6-9fddef3265ff")
-		)
-		(instances
-			(project "Onboarding"
-				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -12178,6 +12378,87 @@
 		)
 	)
 	(symbol
+		(lib_id "SYS_27:C")
+		(at 124.46 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "10502e3d-9285-41ec-ab05-d6c9e769e7a0")
+		(property "Reference" "C16"
+			(at 124.46 127.508 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u"
+			(at 124.714 131.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 125.4252 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 124.46 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab6801af-a416-448c-94ff-c6656e1133f3")
+		)
+		(pin "2"
+			(uuid "13dd80ef-e895-4f7a-bd43-e72c2ddc6029")
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 236.22 113.03 0)
 		(unit 1)
@@ -12286,7 +12567,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SYS27_Footprints:SAMTEC_FTSH-105-01-L-DV-007-K"
+		(property "Footprint" "SYS_27_Footprint1111s:SAMTEC_FTSH-105-01-L-DV-007-K"
 			(at 44.45 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -13107,7 +13388,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SYS27_Footprints:DFN10_2X2_STM"
+		(property "Footprint" "SYS_27_Footprint1111s:DFN10_2X2_STM"
 			(at 160.02 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -13974,6 +14255,168 @@
 		)
 	)
 	(symbol
+		(lib_id "SYS_27:C")
+		(at 118.11 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "367b90f9-2578-4710-86b7-9cdd275e6d7c")
+		(property "Reference" "C15"
+			(at 118.11 127.508 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 118.364 131.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 119.0752 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 118.11 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8d0063c6-2193-4884-8fbc-835db827f051")
+		)
+		(pin "2"
+			(uuid "e1a3cc49-7b72-43b3-9237-0afa9b7959a5")
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SYS_27:C")
+		(at 111.76 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "36addeed-51f9-44b2-8132-e47a7c1c99c1")
+		(property "Reference" "C14"
+			(at 111.76 127.508 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 112.014 131.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 112.7252 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 111.76 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "677de3d2-0272-4ebd-8f3a-b22cd596a669")
+		)
+		(pin "2"
+			(uuid "bab5ba0a-7755-4ef9-910e-2168e9ef5361")
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SYS_27:R")
 		(at 236.22 109.22 0)
 		(unit 1)
@@ -14290,6 +14733,87 @@
 		)
 	)
 	(symbol
+		(lib_id "SYS_27:C")
+		(at 130.81 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "42d2c0fd-867d-4222-99bc-2f6bea033321")
+		(property "Reference" "C17"
+			(at 130.81 127.508 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 131.064 131.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 131.7752 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 130.81 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "04e5a6a5-8b16-4234-823c-0984410cddf3")
+		)
+		(pin "2"
+			(uuid "21ad35af-fd1f-49e3-83a8-53d3a0d8446c")
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 86.36 154.94 0)
 		(unit 1)
@@ -14399,7 +14923,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SYS27_Footprints:SOT_24-2BLY_STM"
+		(property "Footprint" "SYS_27_Footprint1111s:SOT_24-2BLY_STM"
 			(at 214.63 267.97 0)
 			(hide yes)
 			(show_name no)
@@ -14608,6 +15132,82 @@
 			(project "Onboarding"
 				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 87.63 279.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5949ba47-5b17-4c08-a4f4-f9f8a77ed514")
+		(property "Reference" "H3"
+			(at 90.17 278.1299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 90.17 280.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+			(at 87.63 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 87.63 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -15118,7 +15718,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SYS27_Footprints:WL-SFTW_3528_PLCC4"
+		(property "Footprint" "cwrym-systems-intro:WL-SFTW_3528_PLCC4"
 			(at 31.75 237.49 0)
 			(hide yes)
 			(show_name no)
@@ -16077,7 +16677,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_TE-Connectivity:TE_T4041037041-000_M8_04_Socket_Straight"
 			(at 246.888 304.8 0)
 			(hide yes)
 			(show_name no)
@@ -16211,6 +16811,88 @@
 			(project "Onboarding"
 				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SYS_27:C")
+		(at 182.88 85.09 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b05d594-c560-4918-a9d2-bd259604a4e4")
+		(property "Reference" "C12"
+			(at 186.69 83.8199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 186.69 86.3599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 181.9148 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 182.88 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb253580-e78a-4aa6-ba32-615a55a08557")
+		)
+		(pin "2"
+			(uuid "e1ce443d-c5ff-4863-b037-d577c2386546")
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -16538,6 +17220,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 175.26 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98094d06-9ed1-47eb-9062-cc3acdc84f41")
+		(property "Reference" "#PWR061"
+			(at 175.26 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.26 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2e8536a3-805e-4f3e-9842-f01ff835bc4a")
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SYS_27:DFE252012F-4R7M=P2")
 		(at 74.93 24.13 0)
 		(unit 1)
@@ -16569,7 +17330,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SYS27_Footprints:INDC2520X120N"
+		(property "Footprint" "SYS_27_Footprint1111s:INDC2520X120N"
 			(at 74.93 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -16858,6 +17619,87 @@
 		)
 	)
 	(symbol
+		(lib_id "SYS_27:C")
+		(at 105.41 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a30ba21c-ae8a-4dc4-972f-9277524d6efa")
+		(property "Reference" "C13"
+			(at 105.41 127.508 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 105.664 131.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 106.3752 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 105.41 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f9d3809e-d4b2-44ed-9735-cd7ef3cc0e07")
+		)
+		(pin "2"
+			(uuid "b6291b2b-21a7-4d36-a71c-35caeeab3d6d")
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SYS_27:R")
 		(at 88.9 107.95 0)
 		(unit 1)
@@ -17128,7 +17970,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SYS27_Footprints:OSC_XRCGB24M000F3M00R0"
+		(property "Footprint" "SYS_27_Footprint1111s:OSC_XRCGB24M000F3M00R0"
 			(at 43.18 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -17308,6 +18150,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 87.63 266.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a990096f-e2eb-4c22-9476-a7d8f0526fe0")
+		(property "Reference" "H1"
+			(at 90.17 265.4299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 90.17 267.9699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+			(at 87.63 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 87.63 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 157.48 186.69 0)
 		(unit 1)
@@ -17418,7 +18336,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SYS27_Footprints:SOT-24-5_MC_MCH"
+		(property "Footprint" "SYS_27_Footprint1111s:SOT-24-5_MC_MCH"
 			(at 167.64 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -17550,6 +18468,82 @@
 			(project "Onboarding"
 				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
 					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 87.63 285.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b454579e-9475-40a3-9d1c-0a70ff0def4c")
+		(property "Reference" "H4"
+			(at 90.17 284.4799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 90.17 287.0199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+			(at 87.63 285.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 285.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 87.63 285.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -17924,7 +18918,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SYS27_Footprints:TSOP6_SOT457_NEX"
+		(property "Footprint" "SYS_27_Footprint1111s:TSOP6_SOT457_NEX"
 			(at 133.35 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -17987,6 +18981,87 @@
 		)
 	)
 	(symbol
+		(lib_id "SYS_27:C")
+		(at 137.16 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bebbade5-ffe5-4962-9a94-7b7de8c243df")
+		(property "Reference" "C18"
+			(at 137.16 127.508 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1n"
+			(at 137.414 131.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 138.1252 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 137.16 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e8d1411d-6c89-499f-8912-20ec0900c4b8")
+		)
+		(pin "2"
+			(uuid "ca489f7f-f3e2-438d-8384-dce912c461ab")
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_14P")
 		(at 27.94 78.74 0)
 		(unit 1)
@@ -18018,7 +19093,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 			(at 31.75 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -18107,7 +19182,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 100.33 133.35 0)
+		(at 100.33 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18117,7 +19192,7 @@
 		(dnp no)
 		(uuid "c1d24980-8377-459b-af65-0dc038f98009")
 		(property "Reference" "#PWR02"
-			(at 100.33 137.16 0)
+			(at 100.33 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18128,7 +19203,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 100.33 129.54 0)
+			(at 100.33 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18138,7 +19213,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 133.35 0)
+			(at 100.33 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18149,7 +19224,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 133.35 0)
+			(at 100.33 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18160,7 +19235,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 100.33 133.35 0)
+			(at 100.33 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18422,6 +19497,87 @@
 			(project "Onboarding"
 				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SYS_27:C")
+		(at 143.51 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c5b2a52b-71a5-45a5-9b18-750faad020d6")
+		(property "Reference" "C19"
+			(at 143.51 127.508 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1n"
+			(at 143.764 131.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 144.4752 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 143.51 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "41efa77f-95a4-4d16-bcea-cf17fc570022")
+		)
+		(pin "2"
+			(uuid "354af914-974e-4778-ae92-dcb9cb4130d6")
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -19366,6 +20522,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 87.63 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc3bf80e-34ef-4032-be7e-3d8303bda193")
+		(property "Reference" "H2"
+			(at 90.17 271.7799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 90.17 274.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+			(at 87.63 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 87.63 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 234.95 148.59 0)
 		(unit 1)
@@ -20159,6 +21391,173 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x05_Pin")
+		(at 166.37 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1f27a85-3885-4d23-bf85-241f4f618903")
+		(property "Reference" "J4"
+			(at 167.005 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x05_Pin"
+			(at 167.005 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Horizontal"
+			(at 166.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated"
+			(at 166.37 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "aa734655-3ee5-4e76-ba6a-dd48e6bf584e")
+		)
+		(pin "3"
+			(uuid "648376b1-6758-4d22-a686-50de34dce349")
+		)
+		(pin "4"
+			(uuid "9e8478ef-b2a8-43aa-b5ce-f8d2a5b65967")
+		)
+		(pin "2"
+			(uuid "47029578-d021-41c2-b64f-74dabdd4263b")
+		)
+		(pin "1"
+			(uuid "e1889af7-3724-4dc6-a748-a336b9058458")
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 175.26 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2a9e3ed-f26c-47dd-9035-55aaa13e101d")
+		(property "Reference" "#PWR028"
+			(at 175.26 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 175.26 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 175.26 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a7127c15-fe6f-4a12-b577-21e87a9e8164")
+		)
+		(instances
+			(project "Onboarding"
+				(path "/1ef522de-f614-4c6a-926c-c7899b0bf4fc"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SYS_27:B3U-1000P")
 		(at 76.2 93.98 90)
 		(mirror x)
@@ -20192,7 +21591,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SYS27_Footprints:B3U-1000P"
+		(property "Footprint" "SYS_27_Footprint1111s:B3U-1000P"
 			(at 76.2 93.98 0)
 			(hide yes)
 			(show_name no)
