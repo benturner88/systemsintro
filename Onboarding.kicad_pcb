@@ -15670,7 +15670,7 @@
 	(via
 		(at 79 94.75)
 		(size 0.6)
-		(drill 0.3)
+		(drill 0.2)
 		(layers "F.Cu" "B.Cu")
 		(net "GND")
 		(uuid "c0172383-8baf-41d9-a674-5a13b738c5b0")
